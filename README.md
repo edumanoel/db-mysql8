@@ -1,8 +1,5 @@
-# Docker compose db MySQL 8
+# Docker compose db MySQL
 
-Configuração básica para uso em localhost.
-
-```
-#Configure seu arquivo .env com a propriedade (exemplo):
-DB_PASSWORD=root
-```
+1. Crie um arquivo ".env" conforme o arquivo ".env.example"
+2. Defina a senha de root do banco de dados `DB_ROOT_PASSWORD=root`
+3. Defina a porta local a ser usada pelo banco de dados `DB_PORT=3306`

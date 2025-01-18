@@ -2,8 +2,8 @@ services:
   db:
     image: mysql:8.0
     ports:
-      - "33068:3306"
+      - "${DB_PORT}:3306"
     volumes:
       - ./storage:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
